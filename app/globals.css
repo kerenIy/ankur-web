@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+.black-blue-gradient {
+  background: linear-gradient(180deg, #000205 55%, #014db1 100%);
+}
+
+.button-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 1%,
+    rgba(255, 255, 255, 0.05) 85%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+}
+
+.carosel-icon {
+  background: linear-gradient(
+    225deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  backdrop-filter: blur(21.677650451660156px);
+}
+
+.carosel-card {
+  background: linear-gradient(94.91deg, #1a1a1a 41.06%, #808080 289.22%);
+}
+.carosel-container {
+  display: grid;
+  grid-template-columns: repeat(6, 600px);
+  gap: 2px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .carosel-container {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(6, 300px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: wrap;
+  }
+
+  .sm-banner {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: wrap;
+  }
+}
+
+.carosel-container::-webkit-scrollbar,
+.sm-banner::-webkit-scrollbar {
+  display: none;
+}
+
+/* .slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+} */
+
+.services {
+  background: linear-gradient(
+    232.31deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+}
+
+.session-double {
+  background: linear-gradient(
+    232.31deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+}
+
+.connector {
+  box-shadow: 0px 0px 32.88px 0px rgba(117, 184, 255, 1);
+
+  box-shadow: 0px 0px 16.44px 0px rgba(157, 204, 255, 1);
+}
+
+.ankur-logo-blur {
+  background: linear-gradient(
+    225deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border: 1.1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16.440000534057617px);
+}
+
+.learn-more {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 15%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  box-shadow: 0px -4.42px 0px 0px rgba(0, 0, 0, 0.5) inset;
+  backdrop-filter: blur(44.18010330200195px);
+}
+
+.faq-item {
+  background: linear-gradient(
+    265.12deg,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  box-shadow: 81.6px 26.81px 111.91px -37.3px #55557c14;
+  backdrop-filter: blur(23.313610076904297px);
+}
+
+.footer {
+  background: linear-gradient(234.5deg, #012e88 48.67%, #007bff 100%);
+  box-shadow: 0px -45px 141.5px 0px #0c40a5;
+}
+
+.services-container {
+  background: linear-gradient(
+    232.31deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+}
+
+.footer-img {
+  box-shadow: 0px -45px 141.5px 0px #0c40a5;
+}
