@@ -14,7 +14,7 @@ export default function Navbar() {
   const active = `bg-[#FFFFFF0D] rounded-[12.5px] px-[6px] md:px-[12px] py-[3px] md:py-[6px] font-[600] text-white`;
 
   return (
-    <div className="">
+    <div className="relative">
       <div className="absolute top-0">
         <Image src="/light-rays.svg" alt="Logo" width={1900} height={1900} />
       </div>
@@ -23,8 +23,8 @@ export default function Navbar() {
         data-aos-once="false"
         className="fixed w-[100%] top-[15px] z-[1000] "
       >
-        <div className="flex justify-center items-center">
-          <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ">
+          <div className="flex justify-center items-center backdrop-blur-md">
             <div className="border-[1px] border-[#FFFFFF0D] bg-[#20202080] rounded-[16.84px] md:rounded-[24px] p-[8px] md:p-[16px] lg:w-[700px]">
               <div className="flex justify-between items-center  text-[#FFFFFF80] text-[12px] md:text-[18px]">
                 <Link

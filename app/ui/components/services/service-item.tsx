@@ -47,15 +47,12 @@ export default function ServiceItem({
 
       <div className="p-[2.5%] absolute top-0 w-[100%] ">
         <video
-          controls
           autoPlay
           muted
           loop
           playsInline
           className="rounded-[18px] opacity-10 "
-          // loading="lazy"
         >
-          {" "}
           <source src={videoLink} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

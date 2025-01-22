@@ -25,7 +25,7 @@ export default function ProcessContainer() {
             <div
               data-aos="fade-left"
               data-aos-once="false"
-              className={`flex justify-between items-center py-[7%] ${
+              className={`flex justify-center items-center py-[7%] ${
                 item.id % 2 === 0 ? "block" : "hidden"
               }`}
             >
@@ -39,12 +39,12 @@ export default function ProcessContainer() {
                   alt={item.title}
                   width={576}
                   height={576}
-                  className="rounded-[11.57px]"
+                  className="rounded-[11.57px] mx-[6%]"
                 />
               </div>
 
               <div
-                className={`h-[576px] text-white ml-[4px] ${
+                className={`h-[576px] text-white mx-[6%] ${
                   item.id % 2 === 0 ? "float-right" : "float-left"
                 }`}
               >
@@ -65,7 +65,7 @@ export default function ProcessContainer() {
             <div
               data-aos="fade-right"
               data-aos-once="false"
-              className={`flex justify-between items-center py-[7%] ${
+              className={`flex justify-center items-center py-[7%] ${
                 item.id % 2 !== 0 ? "block" : "hidden"
               }`}
             >
